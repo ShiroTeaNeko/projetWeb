@@ -6,6 +6,8 @@ $pdo = new PDO(
     "AdminWeb",
     "f1b29BixVHmRCi5p");
 
+//Permet le login d'un utilisateur si les condition sont remplies
+
 if(isset($_POST['formconnexion'])) {
     $emailconnect = htmlspecialchars($_POST['emailconnect']);
     $passwordconnect = htmlspecialchars($_POST['passwordconnect']);
@@ -36,17 +38,7 @@ require_once '../layout/header.php';
 
 
 
-<!DOCTYPE html>
-<html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Partiel</title>
-</head>
-<body>
 <form method="POST" action="login.php">
     <div class="form-row mx-5">
         <div class="form-group col-md-4">

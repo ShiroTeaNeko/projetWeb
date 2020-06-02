@@ -1,17 +1,14 @@
 <?php
-//page qui permet de montrer tout les biens présent sur le site
-
 session_start();
-$title = "Nos dernières locations";
+
 require_once '../layout/header.php';
 require_once '../function/function.php';
 
-$biens = getLocation();
-
+$biens = search();
 ?>
 
     <div class="container mt-4">
-        <div class="card-deck">
+        <div class="row px-2">
             <?php
             foreach ($biens as $bien) {
                 require '../Authentification/all.php';

@@ -1,10 +1,13 @@
 <?php
 
+//Permet a un visiteur de s'enregistrer en temps qu'utilisateur
+
 $pdo = new PDO(
     "mysql:host=localhost:3307;dbname=projetWeb",
     "AdminWeb",
     "f1b29BixVHmRCi5p");
 
+//regarde si le formulaire est remplie au moment du submit
 if(isset($_POST['submit']))
 {
     $prenom = htmlspecialchars($_POST["prenom"]);
@@ -14,9 +17,11 @@ if(isset($_POST['submit']))
     $password1 = ($_POST["password1"]);
     $password2 = ($_POST["password2"]);
 
-
+    //securisation du mdp utilisateur avec un hash
     $hashdepass = password_hash($password1, PASSWORD_DEFAULT);
 
+
+    //série de if pour voir si le formulaire est remplie correctement
     if(!empty($_POST['prenom']) AND !empty($_POST['nom']) AND !empty($_POST['email']) AND !empty($_POST['user']) AND !empty($_POST['password1']) AND !empty($_POST['password2']))
     {
         $userlength = strlen($user);

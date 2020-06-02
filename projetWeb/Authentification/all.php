@@ -1,9 +1,9 @@
 <?php
-
+//Création d'une carte pour montrer une annonce
 ?>
 
     <div class="card col-4">
-        <img class="card-img-top" src="../villa.jpg" alt="Card image cap">
+        <img class="card-img-top" src="../images/<?php echo $bien['image'];?>" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">
                 <?php echo $bien['Titre'];

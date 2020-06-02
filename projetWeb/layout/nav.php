@@ -39,10 +39,10 @@ require_once '../function/db.php'
             ?>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="../Authentification/login.php">Login</a>
+                    <a class="nav-link " href="../Authentification/login.php">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../Authentification/auth.php">Register</a>
+                    <a class="nav-link " href="../Authentification/auth.php">Register</a>
                 </li>
             </ul>
                 <?php

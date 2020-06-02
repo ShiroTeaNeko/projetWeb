@@ -1,4 +1,6 @@
 <?php
+//page qui permet de dire a l'utilisateur si son annonce est bien enregistrée dans la base de données
+
 session_start();
 (empty($_POST) ||
     empty($_POST['titre']) ||
@@ -17,14 +19,9 @@ require_once '../layout/header.php';
                 <h2>
                     Votre demande a bien été prise en compte, votre bien est desormais enregistré !
                 </h2>
+                <a href="../Authentification/profile.php?id=<?= $_SESSION['id'] ?>" class="btn btn-primary">Aller voir sur Mon Profil !</a>
             </div>
-        <?php} else { ?>
-            <div class="alert alert-danger" role="alert">
-                <h2>
-                    Une erreur est survenue lors de l'enregistrement de votre demande
-                </h2>
-            </div>
-        <?php }  ?>
+        <?php } ?>
     </div>
 
 <?php require_once '../layout/footer.php'; ?>

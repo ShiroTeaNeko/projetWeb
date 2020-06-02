@@ -1,4 +1,5 @@
 <?php
+//permet de se connecter à la base de données
 
 function getPdo(): PDO
 {
