@@ -1,0 +1,31 @@
+Fichier d'instruction (Windows) :
+
+    Version php 7.3.5
+    Version WAMP 3.1.9
+    Version MySQL 5.7.26
+
+-- Utilisation de WAMP (Windows):
+
+    Lancer le serveur depuis WAMP --> Démarrer les services
+
+-- Installation de NodeJS (Windows) :
+
+    télécharger sur le site officiel :
+
+    https://nodejs.org/fr/
+
+-- Utilisation de WAMP :
+
+    Lancer le serveur depuis WAMP --> Démarrer les services
+
+-- Lancement du site depuis votre IDE :
+
+ php -S localhost:8000
+
+-- Information de la base de données :
+
+ dsn : mysql:host=localhost:8000;dbname=projetweb
+
+ username : AdminWeb
+
+ password : f1b29BixVHmRCi5p
